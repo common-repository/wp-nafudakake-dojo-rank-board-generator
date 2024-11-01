@@ -1,0 +1,391 @@
+/*  ######################################################################## */
+/*  COMMON ADMIN STYLES */
+/*  ######################################################################## */
+
+.admin-box-top {
+	margin-right: 0px;
+    margin-top: 20px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #7da7d9;
+    padding: 20px; 
+
+}
+
+.alert-green, .alert-red {
+    border-radius: 25px;
+    background-color: #82ca9c;
+    padding: 20px; 
+    margin-top: 20px;
+}
+
+.alert-green { 
+} 
+
+#message_center {
+	display: none;
+}
+
+.admin-box-bottom, .admin-white-box {
+    border-radius: 0px 0px 25px 25px ;
+    background: #ffffff;
+    padding: 0px 0px 0px 0px; 
+	margin-bottom: 30px;
+	margin-right: 0px;
+	width: auto;
+	overflow: auto;
+}
+
+.admin-box-bottom table  {
+	margin:0px;
+	border: 1px solid #fff;
+}
+
+div.admin-box-bottom table td,div.admin-box-bottom table th, div.admin-half td {
+	vertical-align: top;
+	padding-right:20px;
+	padding-bottom:20px;
+	background-color: #eee;
+	padding: 5px;
+}
+
+.admin-wrapper  tr:nth-child(even) td , #nafu_settings_table tr:nth-child(even) td, .admin-wrapper  tr:nth-child(even) th, #nafu_settings_table tr:nth-child(even) th {
+	background-color: #ddd !important;
+}
+ 
+.admin-wrapper {
+	margin: 40px 0px 40px 0px;
+	width: 98%;
+}
+
+.admin-box-bottom {
+	padding: 20px; 
+} 
+
+.admin-wrapper input[type=text], .admin-wrapper textarea {
+	background-color:#fafafa;
+	font-size:11px;
+	color:#4d9467;
+	width: 200px;
+}  
+
+button {
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 125% !important; 
+}
+
+.admin-divider {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: -20px;
+	margin-left: -20px;
+	height: 8px; 
+	background-color: #eee;
+}  
+
+.admin-wrapper h4 {
+	color:  #7da7d9;
+	font-size: 110%;
+}
+ 
+.clearfix {
+	clear:both;
+	margin-bottom: 30px;
+}
+
+.settingsbox {
+	background-color: #eee;
+	margin: 0px 10px 0px 0px;
+	padding: 5px;
+	border-radius: 10px;
+	float: left;
+}
+
+ 
+/* ##################################################################
+	ADMIN EDITOR STYLES; SLATS AND DRAG+DROP
+    ################################################################## */  
+
+	#nafu_settings_table th {
+		text-align: left;
+	}
+		 
+	#nafu {
+		background-color:#fff;
+	}
+	
+	#nafu tr {
+		background-color: #fff;
+	}
+	
+	#nafu td, #nafu th {
+		background-color: #f2f2f2;
+	}
+	#nafu th {
+	
+	}
+	
+	#nafu td { 
+		padding-left: 10px;
+		padding-right: 10px;
+		min-width:50px;
+	}
+	
+	/* table row labels in editor. */
+	.nafu_rotate {
+		position: relative; 
+		margin-top: 20px;
+
+		/* Safari */
+		-webkit-transform: rotate(-90deg);
+		
+		/* Firefox */
+		-moz-transform: rotate(-90deg);
+		
+		/* IE */
+		-ms-transform: rotate(-90deg);
+		
+		/* Opera */
+		-o-transform: rotate(-90deg);
+		
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
+	
+	#nrow3, #nrow4, #nrow5 {
+		display: none;
+	}
+	
+	.connected, .sortable  {
+		margin: auto;
+		padding: 0;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	} 
+	
+	li.sortable-placeholder, li.connected-placeholder {
+		border: 1px dashed #CCC !important;
+		background-color: #ddd;
+		width:24px;
+	}
+	
+	ul.connected.list  , #slatbin {
+		min-height: 160px;
+	}
+	
+	ul.connected.list li:hover {
+		background-color: #ddd;
+	}  
+	
+	#slatbin {
+		background-color: #666; 
+		margin: -5px -10px -5px -10px;
+		padding-left: 5px;
+		background-image:url('images/trash-512.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		}
+		
+
+/* ##################################################################
+	LIVE RANKBOARD STYLES
+    ################################################################## */
+     	
+	#rank_board {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		clear: right;
+	}
+	 
+	
+	#rank_board ul {
+		margin-left: 0px;
+		margin-right: 0px; 
+	}
+	
+	ul.connected.list li,   .rank_board_slat { 
+		margin-left: 0;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-right: 5px;
+					
+		overflow:hidden;
+		padding: 5px;  
+
+		border-top: thin solid #6e747a ;
+		border-right: thin solid #000000;
+		border-bottom: thin solid #000000;
+		border-left: thin solid #6e747a ;
+		
+		display: inline;
+	}
+	
+	.rank_row_vertical .rank_board_slat { 
+		display: block;
+	}
+	
+	.rank_row_vertical {
+		margin-right: 20px;
+	}
+	
+	.rank_row_vertical .rank_board_slat {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: auto;
+		margin-bottom: -1px;
+	}
+	
+	.rank_row_horizontal .rank_board_slat { 
+		min-height: 140px;
+		margin: auto -1px auto auto;
+		padding: 5px; 
+		display: inline-block;
+		text-align: left;  
+	}
+	
+	.rank_row_vertical .nafu_orientation{
+		position: relative; 
+		-webkit-transform: translateY(30%);
+		-ms-transform: translateY(30%);
+		transform: translateY(30%);
+	}
+	
+	#nafu .nafu_orientation  { 
+		-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+		
+	.rank_row_horizontal  .nafu_orientation, #nafu .nafu_orientation {
+		font-family: 'Open Sans',sans-serif;  
+		
+		-ms-writing-mode: tb-rl; /* old syntax. IE */
+		-webkit-writing-mode: vertical-rl;
+		-moz-writing-mode: vertical-rl;
+		-ms-writing-mode: vertical-rl;
+		writing-mode: vertical-rl; /* new syntax */
+		
+		-webkit-text-orientation: upright;
+		-moz-text-orientation: upright;
+		-ms-text-orientation: upright;
+		text-orientation: upright;
+	}
+	
+	.rank_row_horizontal .nafu_orientation  {
+		position: relative; 
+		-webkit-transform: translateX(-30%);
+		-ms-transform: translateX(-30%);
+		transform: translateX(-30%);
+		letter-spacing: -3px;
+	}
+	
+/* Portrait and Landscape */
+@media only screen and  (max-width: 1024px) {
+		letter-spacing: 2px;
+}
+@media only screen and  (max-width: 768px) {
+		letter-spacing: 2px;
+}
+
+@media only screen and  (max-width: 480px) {
+		letter-spacing: 2px;
+}
+	 
+
+ 
+
+
+	.yudansha {
+		color: #fff !important; 
+		background-image:url('images/ebonywood.gif');
+		background-position: 0 0;
+		background-repeat: repeat; 
+	}
+	
+	.mudansha {
+		color: #fff !important;  
+		background-image:url('images/rankwood.gif');
+		background-position: top left;
+	}
+	
+	.nameslat {
+		color: #000; 			
+		background-image:url('images/namewood.gif');
+		background-position: top left;
+	}
+
+	.rank_row_vertical {
+		float:left;
+		
+	}
+	
+	.rank_row_vertical ul {
+		list-style-type: none;
+	}
+	
+	.rank_row_vertical .rank_board_slat {
+		display: block;
+	}
+	
+	.rank_row_vertical .nafu_orientation {
+		font-family: 'Open Sans',sans-serif; 
+	}
+
+/* ##################################################################
+	TOOLTIP
+    ################################################################## */
+    
+    /* Tooltip container */
+	.nafu_tooltip { 
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+		font-size: .6em;
+		clear: left;
+	}
+	
+	/* Tooltip text */
+	.nafu_tooltip .nafu_tooltiptext {
+		visibility: hidden;
+		width: 600px;
+		background-color: #ddd;
+		color: #000;
+		text-align: left;
+		padding: 10px;
+		border-radius: 6px;
+		margin-top:5px;
+	 
+		/* Position the tooltip text - see examples below! */
+		position: absolute;
+		z-index: 1;
+		font-size: 1.2em;
+	}
+	.nafu_tooltip .nafu_tooltiptext::before {
+		content: " ";
+		position: absolute;
+		bottom: 100%;  /* At the top of the tooltip */
+		left: 10%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent #ddd transparent;
+	}
+	
+	
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.nafu_tooltip:hover .nafu_tooltiptext {
+		visibility: visible;
+	}
+
+/*  ######################################################################## */
+/*  GENERAL STYLES AND OVERRIDES */
+/*  ######################################################################## */
+
+/* Foundation and other theme kits applly even-odd table coloring. */
+table tbody tr:nth-child(even) {
+	background-color: inherit !important;
+} 
